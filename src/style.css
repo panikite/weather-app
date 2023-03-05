@@ -1,0 +1,57 @@
+
+.wrapper {
+    max-width: 600px;
+    display: block;
+    margin: 50px auto 20px ;
+    padding: 45px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(73, 70, 70, 0.267);
+    background-color: #fff;
+}
+
+.day {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+}
+.day-name {
+    font-size: 14px;
+    color:rgb(78, 78, 78);
+}
+.temp {
+    font-size: 16px;
+}
+.temp-night {
+    opacity: 0.8;
+}
+.current-temperature {
+    font-size: 56px;
+    font-weight: 600;
+    color:rgb(27, 27, 27);
+}
+.current-icon {
+    font-size: 56px;
+    margin-right: 15px;
+}
+.icon-sun {
+    color: rgb(227, 227, 0);
+}
+.temp_info {
+    margin-right: 30px;
+}
+.temp-scale {
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.temp-scale span.active {
+    font-weight: 600;
+    opacity: 1;
+}
+.temp-scale span {
+    cursor: pointer;
+}
+.day .weather-icon {
+    font-size: 18px;
+    color:rgb(162 174 192);
+}

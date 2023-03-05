@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form id="searchForm" action="/">       
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="inputCity" placeholder="Choose other city">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <span class="me-2">
+                                    <i class="bi bi-search"></i>
+                                </span></i>Search
+                            </button>
+                        </div>
+                    </form>          
+                </div>
+                <div class="col-4">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-success" id="currentCityButton">Current city</button>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="row mt-3">
+            <div class="col-5">
+                <div class="date"><span id="day">Friday</span>, <span class="time" id="time">17:00</span></div>
+                <h1 class="current-city" id="currentCity">Lviv</h1>
+                <div class="weather-today">Sunny</div>
+                <button type="button" class="btn btn-link p-0 mt-3 mb-4">Change city</button>
+            </div>
+            <div class="col-7 d-flex justify-content-end">
+                <span class="current-icon">
+                    <i class="bi bi-brightness-high-fill icon-sun"></i>
+                </span>
+                <div class="temp_info">
+                    <span class="current-temperature" id="currentTemp">6°</span>
+                            <div class="temp-scale">
+                                <span class="active" id="celsius">C°</span>
+                                /
+                                <span id="farenheit">F°</span>
+                            </div>
+                </div>
+               
+            </div>
+        </div>
+        
+       
+            <div class="row">
+                <div class="col">
+                    <div class="day p-2 mt-2">
+                        <div class="day-name">Mon</div>
+                        <i class="bi bi-brightness-high-fill weather-icon icon-sun"></i>
+                        <div class="temp">4°<span class="temp-night">/0°</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day p-2 mt-2">
+                        <div class="day-name">Tue</div>
+                        <i class="bi bi-cloud-fill weather-icon icon-cloud"></i>
+                        <div class="temp">0°<span class="temp-night">/-3°</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day p-2 mt-2">
+                        <div class="day-name">Wed</div>
+                        <i class="bi bi-cloud-fill weather-icon icon-cloud"></i>
+                        <div class="temp">-2°<span class="temp-night">/-4°</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day p-2 mt-2">
+                        <div class="day-name">Thu</div>
+                        <i class="bi bi-cloud-snow-fill weather-icon icon-snow"></i>
+                        <div class="temp">1°<span class="temp-night">/-5°</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day p-2 mt-2">
+                        <div class="day-name">Fri</div>
+                        <i class="bi bi-cloud-snow-fill weather-icon icon-snow"></i>
+                        <div class="temp">5°<span class="temp-night">/-4°</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
+
